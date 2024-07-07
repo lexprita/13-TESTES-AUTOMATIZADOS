@@ -1,7 +1,9 @@
 // import soma from './soma.js'
 
-const { it } = require('node:test')
-const soma = require('./soma')
+// const { it } = require('node:test')
+// const soma = require('./soma')
+
+import soma from './soma'
 
 describe('Testes de soma', () => {
     test('deve verificar o resultado de uma soma', () => {

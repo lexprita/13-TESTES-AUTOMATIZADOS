@@ -1,0 +1,34 @@
+{
+    "sourceFile": "divisao.test.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1720435410860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720435621150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n-import subtracao from \"./subtracao\";\r\n+import divisao from \"./divisao\"\r\n \r\n describe('Testes de subtração', () => {\r\n-    test('Deve verificar o resultado de uma subtração', () => {\r\n-        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n-        expect(subtracao(6, 8)).toBeCloseTo(-2)\r\n-        expect(subtracao(60, 2)).toBeCloseTo(58)\r\n+    test('Deve verificar o resultado de uma divisão', () => {\r\n+        expect(divisao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(divisao(6, 8)).toBeCloseTo(-2)\r\n+        expect(divisao(60, 2)).toBeCloseTo(58)\r\n     })\r\n \r\n-    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n-        expect(subtracao(6, 2)).not.toBeCloseTo(5)\r\n+    test('Deve verificar o resultado incorreto de uma divisão', () => {\r\n+        expect(divisao(6, 2)).not.toBeCloseTo(5)\r\n \r\n     })\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435626665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import divisao from \"./divisao\"\r\n+\r\n+describe('Testes de divisão', () => {\r\n+    test('Deve verificar o resultado de uma divisão', () => {\r\n+        expect(divisao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(divisao(6, 8)).toBeCloseTo(-2)\r\n+        expect(divisao(60, 2)).toBeCloseTo(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma divisão', () => {\r\n+        expect(divisao(6, 2)).not.toBeCloseTo(5)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435718612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,19 +10,5 @@\n     test('Deve verificar o resultado incorreto de uma divisão', () => {\r\n         expect(divisao(6, 2)).not.toBeCloseTo(5)\r\n \r\n     })\r\n-})\n-import divisao from \"./divisao\"\r\n-\r\n-describe('Testes de subtração', () => {\r\n-    test('Deve verificar o resultado de uma divisão', () => {\r\n-        expect(divisao(6.7, 2.5)).toBeCloseTo(4.2)\r\n-        expect(divisao(6, 8)).toBeCloseTo(-2)\r\n-        expect(divisao(60, 2)).toBeCloseTo(58)\r\n-    })\r\n-\r\n-    test('Deve verificar o resultado incorreto de uma divisão', () => {\r\n-        expect(divisao(6, 2)).not.toBeCloseTo(5)\r\n-\r\n-    })\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720438716819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import divisao from \"./divisao\"\r\n+\r\n+describe('Testes de divisão', () => {\r\n+    test('Deve verificar o resultado de uma divisão', () => {\r\n+        expect(divisao(6.6, 2)).toBeCloseTo(3.3)\r\n+        expect(divisao(2, 8)).toBeCloseTo(0.25)\r\n+        expect(divisao(60, 2)).toBeCloseTo(30)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma divisão', () => {\r\n+        expect(divisao(6, 2)).not.toBeCloseTo(20)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720435410860,
+            "name": "Commit-0",
+            "content": "import subtracao from \"./subtracao\";\r\n\r\ndescribe('Testes de subtração', () => {\r\n    test('Deve verificar o resultado de uma subtração', () => {\r\n        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n        expect(subtracao(6, 8)).toBeCloseTo(-2)\r\n        expect(subtracao(60, 2)).toBeCloseTo(58)\r\n    })\r\n\r\n    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n        expect(subtracao(6, 2)).not.toBeCloseTo(5)\r\n\r\n    })\r\n})"
+        }
+    ]
+}

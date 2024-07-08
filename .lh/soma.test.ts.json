@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1720364260166,
@@ -15,6 +15,10 @@
                 },
                 {
                     "date": 1720435277374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+// import soma from './soma.js'\r\n+\r\n+// const { it } = require('node:test')\r\n+// const soma = require('./soma')\r\n+\r\n+import soma from './soma'\r\n+\r\n+describe('Testes de soma', () => {\r\n+    test('deve verificar o resultado de uma soma', () => {\r\n+        expect(soma(3, 8)).toBeCloseTo(11)\r\n+    })\r\n+\r\n+    test('deve verificar o resultado incorreto de uma soma', () => {\r\n+        expect(soma(3, 8)).not.toBeCloseTo(12)\r\n+    })\r\n+})\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1720435721456,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+// import soma from './soma.js'\r\n+\r\n+// const { it } = require('node:test')\r\n+// const soma = require('./soma')\r\n+\r\n+import soma from './soma'\r\n+\r\n+describe('Testes de soma', () => {\r\n+    test('deve verificar o resultado de uma soma', () => {\r\n+        expect(soma(3, 8)).toBeCloseTo(11)\r\n+    })\r\n+\r\n+    test('deve verificar o resultado incorreto de uma soma', () => {\r\n+        expect(soma(3, 8)).not.toBeCloseTo(12)\r\n+    })\r\n+})\r\n+\r\n+\r\n+\r\n+\r\n"
                 }
             ],

@@ -1,0 +1,54 @@
+{
+    "sourceFile": "multiplicacao.test.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1720435496289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720435550282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import multiplicacao from \"./multiplicacao\"\r\n \r\n describe('Testes de subtração', () => {\r\n     test('Deve verificar o resultado de uma subtração', () => {\r\n-        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n-        expect(subtracao(6, 8)).toBeCloseTo(-2)\r\n-        expect(subtracao(60, 2)).toBeCloseTo(58)\r\n+        expect(multiplicacao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n     })\r\n \r\n     test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n-        expect(subtracao(6, 2)).not.toBeCloseTo(5)\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(5)\r\n \r\n     })\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435712844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n import multiplicacao from \"./multiplicacao\"\r\n \r\n-describe('Testes de subtração', () => {\r\n-    test('Deve verificar o resultado de uma subtração', () => {\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n         expect(multiplicacao(6.7, 2.5)).toBeCloseTo(4.2)\r\n         expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n         expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n     })\r\n \r\n-    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n         expect(multiplicacao(6, 2)).not.toBeCloseTo(5)\r\n \r\n     })\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435719549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import multiplicacao from \"./multiplicacao\"\r\n+\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n+        expect(multiplicacao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(5)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435758639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import multiplicacao from \"./multiplicacao\"\r\n \r\n describe('Testes de multiplicação', () => {\r\n     test('Deve verificar o resultado de uma multiplicação', () => {\r\n-        expect(multiplicacao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(multiplicacao(6.5, 2)).toBeCloseTo(4.2)\r\n         expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n         expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n     })\r\n \r\n"
+                },
+                {
+                    "date": 1720435764768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import multiplicacao from \"./multiplicacao\"\r\n+\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n+        expect(multiplicacao(6.5, 2)).toBeCloseTo(13)\r\n+        expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(5)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435777766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n describe('Testes de multiplicação', () => {\r\n     test('Deve verificar o resultado de uma multiplicação', () => {\r\n         expect(multiplicacao(6.5, 2)).toBeCloseTo(13)\r\n-        expect(multiplicacao(6, 8)).toBeCloseTo(-2)\r\n+        expect(multiplicacao(2, 8)).toBeCloseTo(16)\r\n         expect(multiplicacao(60, 2)).toBeCloseTo(58)\r\n     })\r\n \r\n     test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n"
+                },
+                {
+                    "date": 1720435783927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import multiplicacao from \"./multiplicacao\"\r\n+\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n+        expect(multiplicacao(6.5, 2)).toBeCloseTo(13)\r\n+        expect(multiplicacao(2, 8)).toBeCloseTo(16)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(120)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(5)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435816672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import multiplicacao from \"./multiplicacao\"\r\n+\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n+        expect(multiplicacao(6.5, 2)).toBeCloseTo(13)\r\n+        expect(multiplicacao(2, 8)).toBeCloseTo(16)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(120)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(20)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720438557688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import multiplicacao from \"./multiplicacao\"\r\n+\r\n+describe('Testes de multiplicação', () => {\r\n+    test('Deve verificar o resultado de uma multiplicação', () => {\r\n+        expect(multiplicacao(6.5, 2)).toBeCloseTo(13.0)\r\n+        expect(multiplicacao(2, 8)).toBeCloseTo(16)\r\n+        expect(multiplicacao(60, 2)).toBeCloseTo(120)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma multiplicação', () => {\r\n+        expect(multiplicacao(6, 2)).not.toBeCloseTo(20)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720435496289,
+            "name": "Commit-0",
+            "content": "import multiplicacao from \"./multiplicacao\"\r\n\r\ndescribe('Testes de subtração', () => {\r\n    test('Deve verificar o resultado de uma subtração', () => {\r\n        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n        expect(subtracao(6, 8)).toBeCloseTo(-2)\r\n        expect(subtracao(60, 2)).toBeCloseTo(58)\r\n    })\r\n\r\n    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n        expect(subtracao(6, 2)).not.toBeCloseTo(5)\r\n\r\n    })\r\n})"
+        }
+    ]
+}

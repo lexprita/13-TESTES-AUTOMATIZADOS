@@ -1,0 +1,42 @@
+{
+    "sourceFile": "subtracao.test.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1720434826379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720434869240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+import subtracao from \"./subtracao\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435053281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,15 @@\n-import subtracao from \"./subtracao\";\n\\ No newline at end of file\n+import subtracao from \"./subtracao\";\r\n+\r\n+describe('Testes de subtração', () => {\r\n+    test('Deve verificar o resultado de uma subtração', () => {\r\n+        expect(subtracao(6, 2)).toBe(4)\r\n+        expect(subtracao(6, 8)).toBe(-2)\r\n+        expect(subtracao(60, 2)).toBe(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado de uma subtração', () => {\r\n+        expect(subtracao(6, 2)).toBe(4)\r\n+        expect(subtracao(6, 8)).toBe(-2)\r\n+        expect(subtracao(60, 2)).toBe(58)\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435086213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n         expect(subtracao(6, 8)).toBe(-2)\r\n         expect(subtracao(60, 2)).toBe(58)\r\n     })\r\n \r\n-    test('Deve verificar o resultado de uma subtração', () => {\r\n-        expect(subtracao(6, 2)).toBe(4)\r\n+    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n+        expect(subtracao(6, 2)).not.toBe(5)\r\n         expect(subtracao(6, 8)).toBe(-2)\r\n         expect(subtracao(60, 2)).toBe(58)\r\n     })\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435188770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import subtracao from \"./subtracao\";\r\n \r\n describe('Testes de subtração', () => {\r\n     test('Deve verificar o resultado de uma subtração', () => {\r\n-        expect(subtracao(6, 2)).toBe(4)\r\n+        expect(subtracao(6.7, 2.5)).toBe(4.2)\r\n         expect(subtracao(6, 8)).toBe(-2)\r\n         expect(subtracao(60, 2)).toBe(58)\r\n     })\r\n \r\n"
+                },
+                {
+                    "date": 1720435215419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import subtracao from \"./subtracao\";\r\n+\r\n+describe('Testes de subtração', () => {\r\n+    test('Deve verificar o resultado de uma subtração', () => {\r\n+        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(subtracao(6, 8)).toBe(-2)\r\n+        expect(subtracao(60, 2)).toBe(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n+        expect(subtracao(6, 2)).not.toBe(5)\r\n+        expect(subtracao(6, 8)).toBe(-2)\r\n+        expect(subtracao(60, 2)).toBe(58)\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720435268945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import subtracao from \"./subtracao\";\r\n+\r\n+describe('Testes de subtração', () => {\r\n+    test('Deve verificar o resultado de uma subtração', () => {\r\n+        expect(subtracao(6.7, 2.5)).toBeCloseTo(4.2)\r\n+        expect(subtracao(6, 8)).toBeCloseTo(-2)\r\n+        expect(subtracao(60, 2)).toBeCloseTo(58)\r\n+    })\r\n+\r\n+    test('Deve verificar o resultado incorreto de uma subtração', () => {\r\n+        expect(subtracao(6, 2)).not.toBeCloseTo(5)\r\n+\r\n+    })\r\n+})\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720434826379,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
